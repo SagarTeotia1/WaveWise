@@ -1,3 +1,6 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 /* Fullscreen video container */
 .video-container {
   position: fixed;
@@ -7,7 +10,7 @@
   height: 100vh;
   overflow: hidden;
   z-index: -1;
-  background-color: #16325B; /* Background color change */
+  background-color: #16325B; /* Background color */
 }
 
 /* Background video */
@@ -29,37 +32,75 @@
   z-index: 10;
   background: rgba(0, 0, 0, 0.3); /* Optional background transparency */
   color: white;
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif; /* Updated Font */
 }
 
+/* WishWave Branding */
 .navbar-left {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 28px; /* Larger text size */
+  font-weight: 700; /* Bolder for emphasis */
+  font-family: 'Poppins', sans-serif; /* Updated Font */
+  letter-spacing: 1.5px;
 }
 
-/* Login Button */
+/* Centering the navigation buttons (excluding Login) */
+.navbar-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1; /* Center navigation */
+  gap: 20px;
+}
+
+/* Nav buttons style (not round) */
+.nav-button {
+  padding: 12px 24px;
+  background-color: rgba(255, 255, 255, 0.6); /* Slightly brighter */
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif; /* Updated Font */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0.85;
+}
+
+.nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.9); /* Brighter on hover */
+  transform: scale(1.05);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Keep Login button on the right side */
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
 .login-button {
   padding: 12px 30px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9); /* Brighter */
   color: #000;
   border: none;
   border-radius: 50px;
   font-size: 18px;
-  font-weight: bold;
+  font-family: 'Poppins', sans-serif; /* Updated Font */
+  font-weight: 600; /* Medium-bold */
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .login-button:hover {
-  background-color: #AFD3E2; /* Hover color updated */
-  transform: scale(1.1); /* Button grows slightly */
-  animation: pulse 1.2s infinite;
+  background-color: #AFD3E2;
+  transform: scale(1.1);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Button container */
+/* Get Started Button - Centered at Bottom */
 .button-container {
   position: absolute;
-  bottom: 50px;
+  bottom: 20px; /* Positioned near the bottom */
   left: 50%;
   transform: translateX(-50%);
 }
@@ -67,38 +108,52 @@
 /* Get Started Button */
 .start-button {
   padding: 12px 30px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   color: #000;
   border: none;
   border-radius: 50px;
   font-size: 18px;
-  font-weight: bold;
+  font-family: 'Poppins', sans-serif; /* Updated Font */
+  font-weight: 600; /* Medium-bold */
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .start-button:hover {
-  background-color: #AFD3E2; /* Hover color updated */
-  transform: scale(1.1); /* Button grows slightly */
-  animation: pulse 1.2s infinite;
+  background-color: rgba(175, 211, 226, 0.9);
+  transform: scale(1.1);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Keyframes for pulse animation */
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(255, 182, 193, 0.7); /* Pink shadow */
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Stack navbar items vertically on mobile */
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
   }
-  70% {
-    box-shadow: 0 0 0 20px rgba(255, 182, 193, 0); /* Fades out */
+
+  /* Center nav buttons stack on mobile */
+  .navbar-center {
+    flex-direction: column;
+    gap: 10px;
   }
-  100% {
-    box-shadow: 0 0 0 0 rgba(255, 182, 193, 0); /* Complete */
+
+  /* Adjust padding for smaller screens */
+  .nav-button, .login-button, .start-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  /* Adjust button container positioning for mobile */
+  .button-container {
+    bottom: 10px;
   }
 }
 
-/* Text Updates for WishWave */
-.navbar-left, .start-button, .login-button {
-  font-family: 'Arial', sans-serif;
-  text-transform: uppercase; /* Ensures text is all caps */
-  letter-spacing: 1.5px; /* Adds slight spacing between letters */
+/* Text Updates for Buttons and WishWave */
+.navbar-left, .start-button, .nav-button, .login-button {
+  font-family: 'Poppins', sans-serif; /* Use modern, professional font */
+  letter-spacing: 1.5px; /* Slight spacing for cleaner text */
+  text-transform: uppercase; /* Ensure text is in uppercase for clarity */
 }
