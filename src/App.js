@@ -1,23 +1,37 @@
-import React from "react";
-import "./App.css";
-import bgVideo from "./assets/background-video.mp4"; // Add your video here
+import React, { useState } from 'react';
+import './App.css';
+import bgVideo from './assets/background-video.mp4'; // Add your video here
 
 function App() {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+
+  const handleGetStartedClick = () => {
+    // Open the side nav when "Get Started" is clicked
+    setIsNavOpen(true);
+  };
+
   return (
     <div className="App">
-      {/* Navigation Bar */}
-      <nav className="navbar">
-        <div className="navbar-left">Wave Wise</div>
-        <div className="navbar-center">
-          <button className="nav-button">GameS</button>
-          <button className="nav-button">Webinar</button>
-          <button className="nav-button">Meetups</button>
-          <button className="nav-button">Connect</button>
-          <button className="nav-button">Profile</button>
-        </div>
-        <div className="navbar-right">
-          <button className="login-button">Login</button>
-        </div>
+      {/* Top Navigation Bar */}
+      <nav className="top-navbar">
+        <div className="top-navbar-left">WaveWise</div>
+      </nav>
+
+      {/* Toggle Nav Button */}
+      <button className="nav-toggle" onClick={toggleNav}>
+        {isNavOpen ? '×' : '☰'}
+      </button>
+
+      {/* Side Navigation Bar */}
+      <nav className={`navbar ${isNavOpen ? 'open' : ''}`}>
+        <a href="#games" className="nav-button">GameS</a>
+        <a href="#webinars" className="nav-button">Webinars</a>
+        <a href="#meetups" className="nav-button">Meetups</a>
+        <a href="#connect" className="nav-button">Connect</a>
       </nav>
 
       {/* Background Video */}
@@ -29,7 +43,9 @@ function App() {
 
       {/* Get Started Button */}
       <div className="button-container">
-        <button className="start-button">Tutorial !</button>
+        <button className="start-button" onClick={handleGetStartedClick}>
+          Get Started
+        </button>
       </div>
     </div>
   );

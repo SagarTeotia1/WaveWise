@@ -11,6 +11,8 @@
   overflow: hidden;
   z-index: -1;
   background-color: #16325B;
+  margin: 0;
+  padding: 0;
 }
 
 /* Background video */
@@ -18,91 +20,101 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  margin: 0;
+  padding: 0;
 }
 
-/* Navigation Bar */
-.navbar {
-  position: absolute;
+/* Top Navigation Bar */
+.top-navbar {
+  position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  padding: 20px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.7); /* Slightly transparent background */
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  z-index: 10;
-  background: rgba(0, 0, 0, 0.3);
+  justify-content: center; /* Center align text horizontally */
+  padding: 0 20px;
   color: white;
   font-family: 'Poppins', Arial, sans-serif;
-}
-
-/* WishWave Branding */
-.navbar-left {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: 1.5px;
+  z-index: 10;
 }
 
-/* Center navigation buttons for desktop */
-.navbar-center {
+/* Side Navigation Bar (initially hidden) */
+.navbar {
+  position: fixed;
+  top: 60px; /* Offset by top nav height */
+  left: -250px; /* Hide the nav initially */
+  width: 250px; /* Width of the side nav */
+  height: calc(100vh - 60px); /* Full height minus top nav height */
+  background: rgba(0, 0, 0, 0.7); /* Dark background for contrast */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  z-index: 10;
+  color: white;
+  font-family: 'Poppins', Arial, sans-serif;
+  transition: left 0.3s ease; /* Smooth slide-in/out effect */
+}
+
+/* Side Nav open state */
+.navbar.open {
+  left: 0; /* Show the nav */
+}
+
+/* Button to toggle nav */
+.nav-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
-  gap: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 20; /* Ensure it's above other content */
+  margin: 0;
+  padding: 0;
 }
 
-/* Nav buttons style (not round) */
+.nav-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Nav text buttons style */
 .nav-button {
-  padding: 12px 24px;
-  background-color: rgba(255, 255, 255, 0.6);
-  color: #000;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none; /* Remove underline */
   font-family: 'Poppins', sans-serif;
+  margin: 10px 0; /* Space between buttons */
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-  opacity: 0.85;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-button:hover {
-  background-color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 1);
   transform: scale(1.05);
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* Keep Login button on the right side */
-.navbar-right {
-  display: flex;
-  align-items: center;
-}
-
-.login-button {
-  padding: 12px 30px;
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #000;
-  border: none;
-  border-radius: 50px;
-  font-size: 18px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.login-button:hover {
-  background-color: #AFD3E2;
-  transform: scale(1.1);
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Get Started Button - Centered at Bottom */
 .button-container {
-  position: absolute;
+  position: fixed;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
+  margin: 0;
+  padding: 0;
 }
 
 /* Get Started Button */
@@ -111,7 +123,7 @@
   background-color: rgba(255, 255, 255, 0.9);
   color: #000;
   border: none;
-  border-radius: 50px;
+  border-radius: 8px; /* Slightly rounded corners */
   font-size: 18px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -121,61 +133,32 @@
 
 .start-button:hover {
   background-color: rgba(175, 211, 226, 0.9);
-  transform: scale(1.1);
+  transform: scale(1.05);
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Horizontal scroll for buttons on mobile */
+/* Adjustments for Mobile */
 @media (max-width: 768px) {
-  /* Adjust navbar for mobile */
+  /* Adjust side nav for mobile */
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
+    width: 200px; /* Narrower side nav */
   }
 
-  /* Horizontal scrollable buttons */
-  .navbar-center {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    overflow-x: auto; /* Horizontal scroll */
-    scrollbar-width: thin; /* Optional: smaller scroll bar */
-    padding: 10px 0;
-    width: 100%;
-  }
-
+  /* Adjust buttons for mobile */
   .nav-button {
-    white-space: nowrap; /* Keep buttons in a single line */
-    padding: 10px 20px;
-    font-size: 14px;
-  }
-
-  /* Keep the login button on the top-right corner */
-  .navbar-right {
-    position: absolute;
-    right: 10px;
-    top: 10px;
+    font-size: 16px;
+    margin: 8px 0;
   }
 
   /* Adjust Get Started button positioning for mobile */
   .button-container {
+    left: 50%; /* Center on mobile */
     bottom: 10px;
-  }
-
-  /* Make sure the nav bar stays scrollable on smaller screens */
-  .navbar-center::-webkit-scrollbar {
-    height: 5px;
-  }
-
-  .navbar-center::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.5); /* Light scrollbar */
-    border-radius: 5px;
   }
 }
 
-/* Text Updates for Buttons and WishWave */
-.navbar-left, .start-button, .nav-button, .login-button {
+/* Text Updates for Buttons and WaveWise */
+.top-navbar-left, .start-button, .nav-button {
   font-family: 'Poppins', sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
