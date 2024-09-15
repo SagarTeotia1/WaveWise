@@ -32,6 +32,7 @@ function App() {
         <a href="#webinars" className="nav-button">Webinars</a>
         <a href="#meetups" className="nav-button">Meetups</a>
         <a href="#connect" className="nav-button">Connect</a>
+        <a href="#about" className="nav-button">Profile</a>
       </nav>
 
       {/* Background Video */}
