@@ -51,7 +51,7 @@
 }
 
 .login-button:hover {
-  background-color: rgba(255, 182, 193, 1); /* Hover color to pink */
+  background-color: #AFD3E2; /* Hover color updated */
   transform: scale(1.1); /* Button grows slightly */
   animation: pulse 1.2s infinite;
 }
@@ -78,7 +78,7 @@
 }
 
 .start-button:hover {
-  background-color: rgba(255, 182, 193, 1); /* Hover color to pink */
+  background-color: #AFD3E2; /* Hover color updated */
   transform: scale(1.1); /* Button grows slightly */
   animation: pulse 1.2s infinite;
 }
