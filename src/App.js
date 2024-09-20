@@ -10,8 +10,8 @@ function App() {
   };
 
   const handleGetStartedClick = () => {
-    // Open the side nav when "Get Started" is clicked
-    setIsNavOpen(true);
+    // Redirect to the specified URL when "Get Started" is clicked
+    window.location.href = 'https://player-started-room.vercel.app/';
   };
 
   return (
@@ -28,10 +28,9 @@ function App() {
 
       {/* Side Navigation Bar */}
       <nav className={`navbar ${isNavOpen ? 'open' : ''}`}>
-        <a href="#games" className="nav-button">GameS</a>
-        <a href="#webinars" className="nav-button">Webinars</a>
-        <a href="#meetups" className="nav-button">Connect</a>
-        <a href="#about" className="nav-button">Profile</a>
+        <a href="https://wave-wise-dasboard.vercel.app/games" className="nav-button">Games/Webinar</a>
+        <a href="https://wave-wise-dasboard.vercel.app/blog" className="nav-button">Blogs</a>
+        <a href="https://wave-wise-dasboard.vercel.app/dashboard" className="nav-button">Profile</a>
       </nav>
 
       {/* Background Video */}
