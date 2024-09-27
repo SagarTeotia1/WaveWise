@@ -1,0 +1,15 @@
+
+
+// @param[default=0.0] Progress
+// @param[default=1.0] Resize
+// @return color
+
+precision highp float;
+
+vec4 main(std::Texture2d Texture, float Progress, float Resize, vec2 Direction) {
+  
+  vec2 uv = fragment(std::getVertexTexCoord());
+  uv = mod((uv - 0.5) * (1. / Resize) + 0.5 + Progress * Direction, 1.);
+  return Texture.sample(uv);
+ 
+}

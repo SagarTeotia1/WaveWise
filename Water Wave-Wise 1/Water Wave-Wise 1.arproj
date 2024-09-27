@@ -1,0 +1,1138 @@
+{
+  "modelName": "document",
+  "name": "Effect",
+  "identifier": "document:76620-c1c2bede-a29e-47b7-82ca-27668282e15e",
+  "id": "1999661a161eaab71141d8adb792a22dda8370",
+  "revision": "2428781a161eaab71141d8adb792a22dda8370",
+  "version": {
+    "dev": 0,
+    "patch": 0,
+    "prod": 187
+  },
+  "creatorIdentifier": "com.facebook.arstudio.skylight",
+  "creatorPlatform": "windows",
+  "creatorFileVersion": {
+    "dev": 0,
+    "patch": 0,
+    "prod": 129
+  },
+  "cameraFar": 50,
+  "cameraNear": 0.009999999776482582,
+  "measurementUnit": "meter",
+  "objects": [
+    {
+      "modelName": "assets_config_model",
+      "identifier": "assets_config_model:76729-c1c2bede-a29e-47b7-82ca-27668282e15e",
+      "categoriesOrder": [
+        "textures",
+        "blocks",
+        "patch_assets",
+        "scripts"
+      ]
+    }
+  ],
+  "previousDocumentIds": [
+    "76618c1c2bedea29e47b782ca27668282e15e",
+    "87076bd03fcc834504b4ebc9e1b767ea62697",
+    "554481bd03fcc834504b4ebc9e1b767ea62697",
+    "112600579569f7d5e5480c87dabe9a6f67174c",
+    "97327a784acc6cca24306ba17f4244ea35f30",
+    "174809d67b12ba31f848ef96ef86fb999b3006",
+    "52809854bce9f1c709e4b7da2af1016db53aeb9",
+    "1355267f23ece09f42d45c7859a0ca3b6be8ae7",
+    "47863686a55043f8214328ba7aefca50eca41a",
+    "342263191a5881674a4d5d94eac9916a1843fa"
+  ],
+  "projectFormatType": "separated_files",
+  "usingPatchesV2": true,
+  "visual_programming": {
+    "sectionFileLocation": "Water Wave-Wise 1.patches"
+  },
+  "children": [
+    {
+      "modelName": "fonts",
+      "identifier": "fonts:76622-c1c2bede-a29e-47b7-82ca-27668282e15e",
+      "children": [
+        {
+          "modelName": "local_font_model",
+          "name": "Facebook Sans Bold",
+          "identifier": "local_font_model:206414-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "206415-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "fontIdentity": "com.facebook.editor.fonts.facebooksans-bold",
+          "isExternalAsset": false
+        }
+      ]
+    },
+    {
+      "modelName": "textures",
+      "identifier": "textures:76626-c1c2bede-a29e-47b7-82ca-27668282e15e",
+      "defaultEnvironmentTexture": "environment_texture_model:207434-1a161eaa-b711-41d8-adb7-92a22dda8370",
+      "children": [
+        {
+          "modelName": "cameraTexture",
+          "name": "cameraTexture0",
+          "identifier": "cameraTexture:221130-c1c2bede-a29e-47b7-82ca-27668282e15e",
+          "sourceSceneObjectIdentifier": "camera:76698-c1c2bede-a29e-47b7-82ca-27668282e15e"
+        },
+        {
+          "sectionFileLocation": "textures/noise.texture"
+        },
+        {
+          "modelName": "sceneDepthTexture",
+          "name": "cameraDepthTexture0",
+          "identifier": "sceneDepthTexture:828077-54e3eace-0b74-4fa2-9a42-7c832cda27c7",
+          "sourceSceneObjectIdentifier": "camera:76698-c1c2bede-a29e-47b7-82ca-27668282e15e"
+        },
+        {
+          "sectionFileLocation": "textures/DiffuseEnvironment.texture"
+        },
+        {
+          "sectionFileLocation": "textures/PreviewEnvironment.texture"
+        },
+        {
+          "sectionFileLocation": "textures/SpecularEnvironment.texture"
+        },
+        {
+          "modelName": "environment_texture_model",
+          "name": "Default environment texture",
+          "identifier": "environment_texture_model:207434-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "diffuseEnvironmentTextureIdentifier": "textures/DiffuseEnvironment.texture",
+          "previewEnvironmentTextureIdentifier": "textures/PreviewEnvironment.texture",
+          "specularEnvironmentTextureIdentifier": "textures/SpecularEnvironment.texture"
+        },
+        {
+          "sectionFileLocation": "objects/garbage_sack/Texture 0.texture"
+        },
+        {
+          "sectionFileLocation": "objects/garbage_sack/Texture 1.texture"
+        },
+        {
+          "sectionFileLocation": "objects/garbage_sack/Texture 2.texture"
+        }
+      ]
+    },
+    {
+      "modelName": "materials",
+      "identifier": "materials:76628-c1c2bede-a29e-47b7-82ca-27668282e15e",
+      "children": [
+        {
+          "sectionFileLocation": "objects/the_fish_particle/Root.material"
+        },
+        {
+          "sectionFileLocation": "objects/garbage_sack/DefaultMaterial.material"
+        }
+      ]
+    },
+    {
+      "modelName": "prefabs",
+      "identifier": "prefabs:76630-c1c2bede-a29e-47b7-82ca-27668282e15e",
+      "children": [
+        {
+          "modelName": "gltf",
+          "name": "particle.049_0",
+          "identifier": "gltf:206703-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "206704-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_1",
+          "identifier": "gltf:206715-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "206716-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_2",
+          "identifier": "gltf:206727-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "206728-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_3",
+          "identifier": "gltf:206739-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "206740-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_4",
+          "identifier": "gltf:206751-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "206752-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_5",
+          "identifier": "gltf:206763-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "206764-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_6",
+          "identifier": "gltf:206775-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "206776-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_7",
+          "identifier": "gltf:206787-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "206788-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_8",
+          "identifier": "gltf:206799-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "206800-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_9",
+          "identifier": "gltf:206811-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "206812-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_10",
+          "identifier": "gltf:206823-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "206824-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_11",
+          "identifier": "gltf:206835-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "206836-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_12",
+          "identifier": "gltf:206847-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "206848-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_13",
+          "identifier": "gltf:206859-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "206860-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_14",
+          "identifier": "gltf:206871-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "206872-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_15",
+          "identifier": "gltf:206883-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "206884-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_16",
+          "identifier": "gltf:206895-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "206896-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_17",
+          "identifier": "gltf:206907-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "206908-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_18",
+          "identifier": "gltf:206919-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "206920-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_19",
+          "identifier": "gltf:206931-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "206932-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_20",
+          "identifier": "gltf:206943-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "206944-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_21",
+          "identifier": "gltf:206955-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "206956-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_22",
+          "identifier": "gltf:206967-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "206968-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_23",
+          "identifier": "gltf:206979-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "206980-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_24",
+          "identifier": "gltf:206991-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "206992-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_25",
+          "identifier": "gltf:207003-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "207004-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_26",
+          "identifier": "gltf:207015-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "207016-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_27",
+          "identifier": "gltf:207027-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "207028-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_28",
+          "identifier": "gltf:207039-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "207040-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_29",
+          "identifier": "gltf:207051-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "207052-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_30",
+          "identifier": "gltf:207063-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "207064-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_31",
+          "identifier": "gltf:207075-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "207076-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_32",
+          "identifier": "gltf:207087-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "207088-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_33",
+          "identifier": "gltf:207099-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "207100-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_34",
+          "identifier": "gltf:207111-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "207112-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_35",
+          "identifier": "gltf:207123-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "207124-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_36",
+          "identifier": "gltf:207135-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "207136-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_37",
+          "identifier": "gltf:207147-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "207148-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_38",
+          "identifier": "gltf:207159-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "207160-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_39",
+          "identifier": "gltf:207171-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "207172-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_40",
+          "identifier": "gltf:207183-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "207184-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_41",
+          "identifier": "gltf:207195-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "207196-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_42",
+          "identifier": "gltf:207207-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "207208-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_43",
+          "identifier": "gltf:207219-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "207220-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_44",
+          "identifier": "gltf:207231-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "207232-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_45",
+          "identifier": "gltf:207243-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "207244-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_46",
+          "identifier": "gltf:207255-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "207256-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_47",
+          "identifier": "gltf:207267-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "207268-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_48",
+          "identifier": "gltf:207279-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "207280-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "particle.049_49",
+          "identifier": "gltf:207291-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:207297-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "207292-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "Cube_DefaultMaterial_0",
+          "identifier": "gltf:212622-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "sourceIdentifier": "master3_d_object_model:212628-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetLocator": "212623-1a161eaa-b711-41d8-adb7-92a22dda8370.glb",
+          "isExternalAsset": false
+        }
+      ]
+    },
+    {
+      "modelName": "3_d_objects_model",
+      "identifier": "3_d_objects_model:76632-c1c2bede-a29e-47b7-82ca-27668282e15e",
+      "children": [
+        {
+          "sectionFileLocation": "objects/the_fish_particle/the_fish_particle.object"
+        },
+        {
+          "sectionFileLocation": "objects/garbage_sack/garbage_sack.object"
+        }
+      ]
+    },
+    {
+      "sectionFileLocation": "Water Wave-Wise 1.scene"
+    },
+    {
+      "modelName": "layers",
+      "identifier": "layers:76636-c1c2bede-a29e-47b7-82ca-27668282e15e",
+      "children": [
+        {
+          "modelName": "layer",
+          "name": "layer0",
+          "identifier": "layer:76704-c1c2bede-a29e-47b7-82ca-27668282e15e",
+          "color": "0xff8c72ca"
+        }
+      ]
+    },
+    {
+      "modelName": "animations_model",
+      "identifier": "animations_model:76638-c1c2bede-a29e-47b7-82ca-27668282e15e",
+      "children": [
+        {
+          "sectionFileLocation": "objects/the_fish_particle/Take 01.animation"
+        }
+      ]
+    },
+    {
+      "modelName": "asset_collections_model",
+      "identifier": "asset_collections_model:76640-c1c2bede-a29e-47b7-82ca-27668282e15e",
+      "children": [
+        {
+          "modelName": "asset_collection_model",
+          "name": "the_fish_particle",
+          "identifier": "asset_collection_model:207405-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetDataHash": "00fae23c5f5129bd1e896a723efb98f3",
+          "assetLocator": "objects/the_fish_particle/the_fish_particle.glb",
+          "authoringTool": "Sketchfab-12.64.0",
+          "excludeDuringExport": true,
+          "isExternalAsset": true,
+          "master3DInstanceSourceHash": "00fae23c5f5129bd1e896a723efb98f3",
+          "children": [
+            {
+              "modelName": "unsupportedFeatures",
+              "name": "unsupportedFeatures0",
+              "identifier": "unsupportedFeatures:207403-1a161eaa-b711-41d8-adb7-92a22dda8370",
+              "namesForFeatureType": {
+                "Animation": [
+                  "Take 01"
+                ],
+                "Material": [
+                  "Root"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "modelName": "asset_collection_model",
+          "name": "garbage_sack",
+          "identifier": "asset_collection_model:212632-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "assetDataHash": "65c694bf6a7ce264b23bb1f537c2894e",
+          "assetLocator": "objects/garbage_sack/garbage_sack.glb",
+          "authoringTool": "Sketchfab-12.66.0",
+          "excludeDuringExport": true,
+          "isExternalAsset": true,
+          "master3DInstanceSourceHash": "65c694bf6a7ce264b23bb1f537c2894e",
+          "textures": [
+            "objects/garbage_sack/Texture 0.texture",
+            "objects/garbage_sack/Texture 1.texture",
+            "objects/garbage_sack/Texture 2.texture"
+          ],
+          "children": [
+            {
+              "modelName": "unsupportedFeatures",
+              "name": "unsupportedFeatures0",
+              "identifier": "unsupportedFeatures:212630-1a161eaa-b711-41d8-adb7-92a22dda8370",
+              "namesForFeatureType": {
+                "Material": [
+                  "DefaultMaterial"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modelName": "patch_assets_model",
+      "identifier": "patch_assets_model:76650-c1c2bede-a29e-47b7-82ca-27668282e15e",
+      "children": [
+        {
+          "modelName": "patch_data_base_model",
+          "name": "worldObjectController",
+          "identifier": "patch_data_base_model:1531865-579569f7-d5e5-480c-87da-be9a6f67174c",
+          "assetDataHash": "b6cd3ab53a1344bf0703aafb5b93802d",
+          "assetLocator": "patches/World Object Controller by Denis Rossiev.arp",
+          "isExternalAsset": true
+        }
+      ]
+    },
+    {
+      "modelName": "scripts_model",
+      "identifier": "scripts_model:76656-c1c2bede-a29e-47b7-82ca-27668282e15e",
+      "children": [
+        {
+          "modelName": "script_bridging_variables_model",
+          "identifier": "script_bridging_variables_model:76658-c1c2bede-a29e-47b7-82ca-27668282e15e"
+        },
+        {
+          "modelName": "script",
+          "name": "License.js",
+          "identifier": "script:130771-3eb14333-a405-4a6e-bdac-77846a7cf155",
+          "assetDataHash": "d22e03b989a5913cb875b2919120a8c8",
+          "assetLocator": "scripts/License.js",
+          "isExternalAsset": true
+        }
+      ]
+    },
+    {
+      "modelName": "bundled_packages_model",
+      "identifier": "bundled_packages_model:76664-c1c2bede-a29e-47b7-82ca-27668282e15e"
+    },
+    {
+      "modelName": "exportConfig",
+      "identifier": "exportConfig:76668-c1c2bede-a29e-47b7-82ca-27668282e15e",
+      "children": [
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:13630759-4bce9f1c-709e-4b7d-a2af-1016db53aeb9",
+          "method": "fastest",
+          "targetFormat": 1
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:13630761-4bce9f1c-709e-4b7d-a2af-1016db53aeb9",
+          "method": "fastest",
+          "targetFormat": 2
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:13630763-4bce9f1c-709e-4b7d-a2af-1016db53aeb9",
+          "method": "fastest"
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:207410-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "accuracy": "best"
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:207412-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "accuracy": "best",
+          "targetFormat": 2
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:207414-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "accuracy": "best",
+          "targetFormat": 1
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:207419-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "accuracy": "best"
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:207421-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "accuracy": "best",
+          "targetFormat": 2
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:207423-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "accuracy": "best",
+          "targetFormat": 1
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:207428-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "accuracy": "best"
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:207430-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "accuracy": "best",
+          "targetFormat": 2
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:207432-1a161eaa-b711-41d8-adb7-92a22dda8370",
+          "accuracy": "best",
+          "targetFormat": 1
+        }
+      ]
+    },
+    {
+      "modelName": "manifest",
+      "identifier": "manifest:76670-c1c2bede-a29e-47b7-82ca-27668282e15e",
+      "additionalEnabledChanges": [],
+      "assistantAppIDs": [
+        "2320137961422959"
+      ],
+      "assistantClientToken": null,
+      "assistantIncludeInDevelopmentArtifacts": false,
+      "assistantQuickTestEnabled": true,
+      "assistantStorageEnabled": true,
+      "assistantUseWit": false,
+      "audioEnableAudioGraphComponents": false,
+      "audioEnableAudioTransformationsApi": false,
+      "bodyTracking3DMinVersion": 181,
+      "bodyTrackingMinVersion": 101,
+      "cameraControlDefaultCameraFacing": "unspecified",
+      "dynamicTextAltitude": false,
+      "dynamicTextDate": false,
+      "dynamicTextLocation": false,
+      "dynamicTextTranslation": false,
+      "dynamicTextWeather": false,
+      "effectDisablesAudioPreview": false,
+      "effectDisablesMicrophone": false,
+      "effectForceAsyncScripting": false,
+      "effectForcesSynchronousScripting": false,
+      "effectHasAmbientAudio": false,
+      "effectHasAudioGraphApi": false,
+      "effectHasTriggeredAudio": false,
+      "effectImageAntiAliasingEdgeSharpness": 0.5,
+      "effectImageAntiAliasingEdgeThreshold": 0.5,
+      "effectImageAntiAliasingTechnique": "fxaa",
+      "effectPbrClearcoatMaterialExtension": false,
+      "effectPbrIorMaterialExtension": false,
+      "effectPbrSheenMaterialExtension": false,
+      "effectPbrSpecularMaterialExtension": false,
+      "effectPbrTransmissionMaterialExtension": false,
+      "effectUses3DModelAssets": false,
+      "effectUses4KTextures": false,
+      "effectUsesAheadOfTimeShaders": false,
+      "effectUsesAnimationPlaybackController": false,
+      "effectUsesAnimationScriptingModule": false,
+      "effectUsesAppLauncher": false,
+      "effectUsesAssistant": false,
+      "effectUsesAudio": false,
+      "effectUsesAudioLegacyMicFork": false,
+      "effectUsesAudioMixer": false,
+      "effectUsesAudioSpatialEmitter": false,
+      "effectUsesAudioTimestamps": false,
+      "effectUsesAugmentAdjacency": false,
+      "effectUsesAugmentControl": false,
+      "effectUsesAugmentGrouping": false,
+      "effectUsesAugmentSharableConfig": false,
+      "effectUsesAugmentSizeControl": false,
+      "effectUsesAutomaticAlphaSort": false,
+      "effectUsesAutomaticInstructions": false,
+      "effectUsesBlockModulesConfigExtras": false,
+      "effectUsesBlocks": true,
+      "effectUsesBlocksDownloadable": false,
+      "effectUsesBlocksScripting": true,
+      "effectUsesBodyTracking": false,
+      "effectUsesBodyTracking2DKeyPoints": false,
+      "effectUsesBoundingBoxScripting": false,
+      "effectUsesBoundingBoxUtilities": false,
+      "effectUsesCameraControl": false,
+      "effectUsesCameraInfoScriptingModule": true,
+      "effectUsesCameraShare": false,
+      "effectUsesComponentEvaluation": true,
+      "effectUsesComposedLocally": false,
+      "effectUsesComposedMaterial": true,
+      "effectUsesControllers": false,
+      "effectUsesCustomEngineSDK": false,
+      "effectUsesCustomFonts": false,
+      "effectUsesCustomMaterial": false,
+      "effectUsesCustomMaterialAndShaderCodeAsset": false,
+      "effectUsesCustomPipeline": false,
+      "effectUsesDSP": false,
+      "effectUsesDate": false,
+      "effectUsesDebugPatch": false,
+      "effectUsesDeltaTime": false,
+      "effectUsesDepth": false,
+      "effectUsesDepthData": false,
+      "effectUsesDepthShaderRead": false,
+      "effectUsesDeviceMotion": false,
+      "effectUsesDiagnosticsScriptingModule": true,
+      "effectUsesDirectionalLightEstimation": false,
+      "effectUsesDspAudioAnalyzer": false,
+      "effectUsesDspBitCrusher": false,
+      "effectUsesDspCompressor": false,
+      "effectUsesDspDelay": false,
+      "effectUsesDspDenoiser": false,
+      "effectUsesDspDistortion": false,
+      "effectUsesDspEnergyMeter": false,
+      "effectUsesDspModulator": false,
+      "effectUsesDspParametricEqualizer": false,
+      "effectUsesDspPitchShifter": false,
+      "effectUsesDspReverb": false,
+      "effectUsesDspVocoder": false,
+      "effectUsesDynamicCapabilities": false,
+      "effectUsesDynamicInstructions": true,
+      "effectUsesDynamicScriptProperties": false,
+      "effectUsesDynamicText": false,
+      "effectUsesEmbeddedVideo": false,
+      "effectUsesEnvironmentTexturePatch": false,
+      "effectUsesExperienceControl": false,
+      "effectUsesExternalBlocks": false,
+      "effectUsesExternalFonts": false,
+      "effectUsesExternalMusicSelection": false,
+      "effectUsesExternalTextures": false,
+      "effectUsesExternalTexturesAudio": false,
+      "effectUsesExternalVideo": false,
+      "effectUsesExternalVideoStream": false,
+      "effectUsesFBA": false,
+      "effectUsesFaceDistortion": false,
+      "effectUsesFaceExpression52Blendshapes": false,
+      "effectUsesFaceExpressionExperimental": false,
+      "effectUsesFaceExpressionFitting": false,
+      "effectUsesFaceExtraction": false,
+      "effectUsesFaceTracker": false,
+      "effectUsesFaceTracker3D": false,
+      "effectUsesFaceTracker96": false,
+      "effectUsesFaceTrackingScripting2D": false,
+      "effectUsesFaceTrueScale": false,
+      "effectUsesFaceWave": false,
+      "effectUsesFacialExpressionRecognition": false,
+      "effectUsesFacialGestureRecognition": false,
+      "effectUsesFieldOfView": false,
+      "effectUsesFingerTracking": false,
+      "effectUsesFonts": true,
+      "effectUsesFormFactor": false,
+      "effectUsesFrameBrightness": false,
+      "effectUsesGalleryPicker": false,
+      "effectUsesGenerativeAI": false,
+      "effectUsesGenericML": false,
+      "effectUsesGlobalTransform": false,
+      "effectUsesGlslEs300Features": false,
+      "effectUsesGltfPbrShader": false,
+      "effectUsesGraphQL": false,
+      "effectUsesHairSegmentation": false,
+      "effectUsesHalfFloatRenderPass": false,
+      "effectUsesHandGestureKeypoints": false,
+      "effectUsesHandTracker": false,
+      "effectUsesHapticFeedback": false,
+      "effectUsesHeadsetInfo": false,
+      "effectUsesHmdNetworkingAPI": false,
+      "effectUsesI18n": false,
+      "effectUsesIdTracker": false,
+      "effectUsesImageAntiAliasing": false,
+      "effectUsesImageAssets": false,
+      "effectUsesImageBasedLighting": true,
+      "effectUsesInstruction": true,
+      "effectUsesIntent": false,
+      "effectUsesInterEffectLinking": false,
+      "effectUsesInternalScriptingAPI": false,
+      "effectUsesIrisTracking": false,
+      "effectUsesJavaScript": true,
+      "effectUsesJavaScriptRuntimeForPatches": false,
+      "effectUsesJavaScriptScripting": true,
+      "effectUsesJavaScriptShaders": false,
+      "effectUsesJavascriptToPatchesBridging": true,
+      "effectUsesLayers": false,
+      "effectUsesLocale": false,
+      "effectUsesLocation": false,
+      "effectUsesLocationAirportData": false,
+      "effectUsesMaterialsScriptingModule": false,
+      "effectUsesMaxParticipants": false,
+      "effectUsesMicrophone": false,
+      "effectUsesMicrophoneV2": false,
+      "effectUsesMovingTargetTracking": false,
+      "effectUsesMultipeer": false,
+      "effectUsesMultipeerMessaging": false,
+      "effectUsesMultiplane": false,
+      "effectUsesMultiplayer": false,
+      "effectUsesMultipleRenderTargets": false,
+      "effectUsesMusic": false,
+      "effectUsesNativeUIControl": true,
+      "effectUsesNativeUIControlEditableText": false,
+      "effectUsesNativeUIControlEditableTextExitCB": false,
+      "effectUsesNativeUIControlPicker": false,
+      "effectUsesNativeUIControlPickerRemoteImages": false,
+      "effectUsesNativeUIControlRawTextInput": false,
+      "effectUsesNativeUIControlSlider": true,
+      "effectUsesNativeUIControlSliderTypeColor": false,
+      "effectUsesNetworking": false,
+      "effectUsesNetworkingScriptAPI": false,
+      "effectUsesObjectCapture": false,
+      "effectUsesObjectTracking": false,
+      "effectUsesOpusCodec": false,
+      "effectUsesOverlayOutput": false,
+      "effectUsesPBRMaterial": true,
+      "effectUsesParticipant": false,
+      "effectUsesParticleSystem": false,
+      "effectUsesPeerOutput": false,
+      "effectUsesPeerVideoStream": false,
+      "effectUsesPermissions": false,
+      "effectUsesPersistence": false,
+      "effectUsesPersistenceCaptureScope": false,
+      "effectUsesPersistenceSharedScope": false,
+      "effectUsesPersonalization": false,
+      "effectUsesPhysics": false,
+      "effectUsesPhysicsSync": false,
+      "effectUsesPlaneNormal": false,
+      "effectUsesPlaneTrackerTrackTextureAPI": false,
+      "effectUsesPlatformEvents": false,
+      "effectUsesPlatformEventsDocumentScoped": false,
+      "effectUsesPlatformFunctions": false,
+      "effectUsesPlatformTextures": false,
+      "effectUsesPlaybackInfo": false,
+      "effectUsesPortalPose": false,
+      "effectUsesPreciseLocation": false,
+      "effectUsesPrefabScriptingModule": false,
+      "effectUsesPreviewCaptureOutputs": false,
+      "effectUsesQPL": false,
+      "effectUsesRGBCameraTexture": false,
+      "effectUsesRTRMapping": false,
+      "effectUsesRandomScriptingModule": false,
+      "effectUsesRawWristbandData": false,
+      "effectUsesReactiveScriptingModule": false,
+      "effectUsesRealScaleEstimation": false,
+      "effectUsesRealScaleEstimationWithFallback": true,
+      "effectUsesRecognition": false,
+      "effectUsesRecognitionTracking": false,
+      "effectUsesRecordedSignalsForSamplers": false,
+      "effectUsesRemote3DModels": false,
+      "effectUsesRenderPasses": true,
+      "effectUsesRenderSettingsHigh": false,
+      "effectUsesRingTryOn": false,
+      "effectUsesRotateVector": false,
+      "effectUsesSceneDepth": true,
+      "effectUsesSceneDepthWithFallback": false,
+      "effectUsesSceneObjectTags": false,
+      "effectUsesSceneRenderPassResolutionAspectRatio": false,
+      "effectUsesSceneScriptingModule": true,
+      "effectUsesScriptAnalytics": false,
+      "effectUsesScriptingDynamicInstantiation": false,
+      "effectUsesSegmentation": false,
+      "effectUsesSegmentationType": false,
+      "effectUsesShaderCode": true,
+      "effectUsesShadows": false,
+      "effectUsesSkinSegmentation": false,
+      "effectUsesSkinSmoothing": false,
+      "effectUsesSpaceSetup": false,
+      "effectUsesSpatialGesture": false,
+      "effectUsesSpatialHandTracking": false,
+      "effectUsesSplitScreen": false,
+      "effectUsesStaticTargetTracking": false,
+      "effectUsesStyleTransfer": false,
+      "effectUsesSupportedOrientations": false,
+      "effectUsesSvg": false,
+      "effectUsesSyncDomApis": true,
+      "effectUsesTextAssets": false,
+      "effectUsesTextCaptions": false,
+      "effectUsesTextExtrusion": false,
+      "effectUsesTexturesScriptingModule": false,
+      "effectUsesTimeScriptingModule": false,
+      "effectUsesToasterTracking": false,
+      "effectUsesTouchGestures": true,
+      "effectUsesTwoDimensionalText": true,
+      "effectUsesTypeScript": false,
+      "effectUsesUiCore": false,
+      "effectUsesUiPlanarBackend": false,
+      "effectUsesUnifiedTargetTracking": false,
+      "effectUsesUnitsScriptingModule": false,
+      "effectUsesVariadicMath": true,
+      "effectUsesVertexTextureFetch": false,
+      "effectUsesVisualShaders": true,
+      "effectUsesVisualShadersSdf": true,
+      "effectUsesVoiceInteraction": false,
+      "effectUsesWarpPostProcessor": false,
+      "effectUsesWarpPreProcessor": false,
+      "effectUsesWarpSmoothing": true,
+      "effectUsesWeather": false,
+      "effectUsesWebPTexture": false,
+      "effectUsesWebsockets": false,
+      "effectUsesWorldTracker": true,
+      "effectUsesWorldTrackerEnvironmentLight": false,
+      "effectUsesWorldTrackerJSAPI": false,
+      "effectUsesWorldTrackingWorldMap": false,
+      "effectUsesWorldUnderstanding": false,
+      "effectUsesWorldUnderstandingV2": false,
+      "effectUsesWriteableSignalSource": false,
+      "engineSDKVersion": "187.0",
+      "externalTexturesWhitelistedDomains": null,
+      "faceExpressionFittingMinVersion": 15,
+      "faceExpressionFittingRTRRetargetingMinVersion": 1,
+      "faceTrackerIsEnabled": false,
+      "faceTrackerMaxFaces": 1,
+      "faceTrackerMinVersion": 10,
+      "facewaveMinVersion": 1,
+      "hairSegmentationMinVersion": 1,
+      "handTrackerMaxHands": 2,
+      "handTrackerMinVersion": 3,
+      "instructionFindAnImageBackCameraEnabled": true,
+      "instructionFindAnImageFrontCameraEnabled": true,
+      "instructionFindBodyBackCameraEnabled": true,
+      "instructionFindBodyFrontCameraEnabled": true,
+      "instructionFindFaceBackCameraEnabled": true,
+      "instructionFindFaceFrontCameraEnabled": true,
+      "instructionFindHandBackCameraEnabled": true,
+      "instructionFindHandFrontCameraEnabled": true,
+      "instructionFindPersonBackCameraEnabled": true,
+      "instructionFindPersonFrontCameraEnabled": true,
+      "instructionTokens": [
+        "flip_camera",
+        "pinch_to_zoom"
+      ],
+      "interEffectLinkingEffectIds": null,
+      "internalScriptingAPIDelay": false,
+      "internalScriptingAPIDeprecatedParticles": false,
+      "internalScriptingAPIEventStream": false,
+      "internalScriptingAPIExperimentalCameraInfo": false,
+      "internalScriptingAPIGlobalTransform": false,
+      "manuallyEnabledItemsIds": [
+        "effectUsesDynamicInstructions"
+      ],
+      "maxParticipantsCount": 0,
+      "multiclassSegmentationMinVersion": 3004,
+      "objectTrackerMaxObjects": 1,
+      "optionalCapabilityItemIds": [],
+      "persistenceWhitelistedKeys": null,
+      "personalizationSpecialOccasion": "none",
+      "platformUsage": {},
+      "recognitionMinVersion": 2,
+      "ringTryOnMinVersion": 1,
+      "sceneDepthMinVersion": 1,
+      "sceneDepthWithFallbackMinVersion": 1,
+      "segmentationMinVersion": 2,
+      "shaderPostProcessor": false,
+      "shaderPreProcessor": false,
+      "supportsLandscape": false,
+      "supportsPortrait": true,
+      "supportsWildcardDomainsWhitelisting": false,
+      "touchGesturesSupportsLongPress": false,
+      "touchGesturesSupportsPan": true,
+      "touchGesturesSupportsPinch": true,
+      "touchGesturesSupportsRawTouch": false,
+      "touchGesturesSupportsRotate": true,
+      "touchGesturesSupportsTap": true,
+      "whitelistedDomains": null,
+      "witAppId": null,
+      "witClientToken": null,
+      "worldTrackerBackCameraEnabled": true,
+      "worldTrackerFrontCameraEnabled": true,
+      "worldTrackerMode": "plane",
+      "worldTrackerUsesFaceTracker": false
+    },
+    {
+      "modelName": "block_documents_model",
+      "identifier": "block_documents_model:76678-c1c2bede-a29e-47b7-82ca-27668282e15e",
+      "children": [
+        {
+          "modelName": "block_model",
+          "name": "water",
+          "identifier": "block_model:637419-bd03fcc8-3450-4b4e-bc9e-1b767ea62697",
+          "assetDataHash": "846f25fe9875924ee18cfca43d00d655",
+          "assetLocator": "blocks/block0/block0.arblock",
+          "excludeDuringExport": true,
+          "instances": [
+            "block_scene_model:7138013-bd03fcc8-3450-4b4e-bc9e-1b767ea62697"
+          ],
+          "isExternalAsset": true
+        }
+      ]
+    },
+    {
+      "modelName": "target",
+      "identifier": "target:76680-c1c2bede-a29e-47b7-82ca-27668282e15e",
+      "targetPlatforms": [
+        "instagram"
+      ],
+      "targetUseCases": [
+        "STORIES"
+      ]
+    },
+    {
+      "modelName": "scripting_config_model",
+      "identifier": "scripting_config_model:76690-c1c2bede-a29e-47b7-82ca-27668282e15e",
+      "forceStrictModeCompilation": true
+    },
+    {
+      "modelName": "videos_model",
+      "identifier": "videos_model:331469-5639127c-c990-420b-b311-408fcb51d4c8"
+    },
+    {
+      "modelName": "graphicsConfig",
+      "identifier": "graphicsConfig:199968-1a161eaa-b711-41d8-adb7-92a22dda8370"
+    },
+    {
+      "modelName": "input_mappings_model",
+      "identifier": "input_mappings_model:200187-1a161eaa-b711-41d8-adb7-92a22dda8370"
+    }
+  ]
+}

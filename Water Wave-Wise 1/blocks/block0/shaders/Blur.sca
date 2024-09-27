@@ -1,0 +1,34 @@
+
+precision highp float;
+
+#define PI 3.141592653589
+#define pow2(x) (x * x)
+#define saturate(x) clamp(x, 0., 1.)
+
+
+float gaussian(vec2 i, float sigma) {
+  return 1.0 / (2.0 * PI * pow2(sigma)) * exp(-((pow2(i.x) + pow2(i.y)) / (2.0 * pow2(sigma))));
+}
+
+vec4 main(std::Texture2d Texture, vec2 ScreenSize) {
+
+  ScreenSize = 1. / ScreenSize * 0.4;
+  vec2 uv = std::getVertexTexCoord();
+
+  vec4 col = vec4(0.);
+  vec4 accum = vec4(0.);
+  float weight;
+  vec2 offset;
+  
+  for (int x = -5; x < 5; ++x) {
+      for (int y = -5; y < 5; ++y) {
+          offset = vec2(x, y);
+          weight = gaussian(offset, 10.);
+          col += Texture.sample(uv + ScreenSize * offset) * weight;
+          accum += weight;
+      }
+  }
+  
+  return col / accum;
+}
+
